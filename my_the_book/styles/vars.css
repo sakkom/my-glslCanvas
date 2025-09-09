@@ -1,0 +1,24 @@
+:root {
+    /*レスポンシブ*/
+    --max-width-desktop: 40%; /*1440px以上*/
+    --max-width-notebook: 50%; /*1439pxで切り替わる*/
+    --max-width-tablet: 65%; /*820pxで切り替わる*/
+    --max-width-mobile: 90%; /*500pxで切り替わる*/
+    --summary-size-desktop: 2rem;
+    --summary-size-tablet: 1.5rem;
+    --a-size-desktop: 1.5rem;
+    --a-size-notebook: 1.2rem;
+    --a-size-tablet: 1rem;
+    --a-size-mobile: 0.8rem;
+
+    /**/
+    --aspect-ratio: 16/9;
+    --offSet-first-section-margin: -6.5vh;
+    --rotate-section: 45deg;
+    --scale-canvas: 0.9;
+
+    --border-width: 0.8vh;
+    --border-color: black;
+    --border-dotted: var(--border-width) dotted var(--border-color);
+    --border-solid: var(--border-width) solid var(--border-color);
+}

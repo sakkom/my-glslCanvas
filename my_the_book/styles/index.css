@@ -1,0 +1,72 @@
+@import url("../logo.css");
+@import url("./vars.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Kosugi Maru", sans-serif;
+    border-top: var(--border-dotted);
+}
+
+/*PC(私のは1440px)そこからスタート -> */
+main {
+    max-width: var(--max-width-desktop);
+    margin: 0 auto;
+}
+
+a {
+    font-size: var(--a-size-desktop);
+    word-break: break-all;
+}
+
+/*---------------------------------------------------------------------------section*/
+section {
+    width: 100%;
+    aspect-ratio: var(--aspect-ratio);
+    transform: rotateZ(var(--rotate-section));
+    border-right: var(--border-solid);
+    border-bottom: var(--border-dotted);
+}
+
+#section_sketch_01 {
+    margin-top: var(--offSet-first-section-margin);
+}
+
+section:has(details[open]) {
+    transform: rotateZ(0deg);
+}
+
+#section_sketch_01:has(details[open]) {
+    margin-top: 0;
+}
+
+/*---------------------------------------------------------------------------canvas*/
+canvas {
+    width: 100%;
+    aspect-ratio: var(--aspect-ratio);
+    display: block;
+    margin: 0 0 0 auto;
+    transform-origin: bottom right; /*スケールの初期設定*/
+    transform: scale(var(--scale-canvas));
+    border-top: var(--border-dotted);
+    border-left: var(--border-solid);
+}
+
+section:has(details[open]) canvas {
+    transform: scale(1);
+}
+
+/*---------------------------------------------------------------------------details & summary*/
+
+details {
+    border-top: var(--border-solid);
+}
+
+summary {
+    font-size: var(--summary-size-desktop);
+}
+/*---------------------------------------------------------------------------*/
